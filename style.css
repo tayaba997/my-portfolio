@@ -1,0 +1,213 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  background: #111;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav .logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav .logo span {
+  color: #e91e63;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 30px;
+}
+nav ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #e91e63;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #111, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  margin-top: -80px;
+}
+.hero h1 span {
+  color: #e91e63;
+  font-weight: bold;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.btn {
+  background: #e91e63;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #ff4081;
+}
+
+/* Sections */
+section {
+  padding: 60px 50px;
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #e91e63;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.project {
+  background: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.project img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #e91e63;
+  text-decoration: none;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+.skills li {
+  background: #222;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* Contact */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #222;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+form button {
+  background: #e91e63;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+  margin-top: 50px;
+}
+.portfolio-section {
+  padding: 40px 20px;
+  background-color: black;
+  margin: 40px 0;
+  border-radius: 12px;
+}
+
+.portfolio-section h2 {
+  color: #e91e63;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pdf-preview, .video-preview {
+  width: 300px;
+  height: 350px;
+  border: 15px solid #1a1a1a;
+  border-radius: 10px;
+}
+
+.file-box {
+  display: inline-block;
+  background-color: #e91e63;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  text-decoration: none;
+}
+
+.file-box:hover {
+  background-color: black;
+  color: #e91e63;
+  border: 1px solid #e91e63;
+}
+
